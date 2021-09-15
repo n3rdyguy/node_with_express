@@ -6,3 +6,10 @@ docker run --name user-api -d -p 3000:3000 node-express-api:latest
 ```
 **Then go to**
 http://localhost:3000/
+
+## Cleanup
+```
+docker stop user-api
+docker rm user-api
+docker rmi node-express-api:latest
+```
