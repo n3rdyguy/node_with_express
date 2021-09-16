@@ -3,8 +3,8 @@ tasks:
   - init: echo 'init script' # runs during prebuild
   #- command: docker build -t node-express-api:latest .
   #- command: docker run --name user-api -d -p 3000:3000 node-express-api:latest
-  command: npm install
-  command: node index.js
+  - command: npm install
+  - command: node index.js
   
 #image:
 #  file: .gitpod.Dockerfile
