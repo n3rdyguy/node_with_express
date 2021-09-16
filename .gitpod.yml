@@ -3,6 +3,7 @@ tasks:
   - init: echo 'init script' # runs during prebuild
   - init: docker build -t node-express-api:latest .
   - init: docker run --name user-api -d -p 3000:3000 node-express-api:latest
+  
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
